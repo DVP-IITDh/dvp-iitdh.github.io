@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Flow Physics Lab</title>
+<meta name="description" content="Research themes of the Flow Physics Lab: lattice Boltzmann method development, compressible flows, multiphase and interface dynamics, thermal convection, non-Newtonian and fluid–particle systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="glyph" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+      <span class="brand-text">Flow Physics Lab<small>Kinetic-theory CFD · IIT Dharwad</small></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About PI</a>
+          <a href="research.html" aria-current="page">Research</a>
+          <a href="people.html">People</a>
+          <a href="publications.html">Publications</a>
+          <a href="teaching.html">Teaching</a>
+          <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Research interests</span>
+      <h1>Investigating flow across scales</h1>
+      <p class="lede">Our research numerically investigates the physics of fluid flow at micro-, meso- and macro-scales, spanning multiphysics phenomena coupled to fluid physics — particle suspensions, applied electric and magnetic fields, chemical reactions and combustible flow, and radiative or neutron transport.</p>
+    </div>
+    <div class="grid cols-2">
+      <article class="theme"><h3>Lattice Boltzmann method development</h3><p>The group's primary tool is the lattice Boltzmann method — a kinetic-theory scheme derived from a discrete Boltzmann equation. We develop finite-volume and total-variation-diminishing formulations on unstructured meshes, and multiple-relaxation-time, cascaded and central-moment collision models, together with multigrid and preconditioning strategies for fast steady-state convergence.</p></article>
+      <article class="theme"><h3>Compressible and high-speed flows</h3><p>Finite-difference lattice Boltzmann methods combined with high-order Runge–Kutta time stepping and WENO reconstruction for supersonic and high-Mach flows over wedges and forward-facing steps. This direction is being carried forward with ISRO-RESPOND toward complex geometries, high-Knudsen-number flows, shock–vortex interactions and re-entry problems.</p></article>
+      <article class="theme"><h3>Multiphase flow and interface dynamics</h3><p>Phase-field lattice Boltzmann approaches for droplets, bubbles, pinch-off and interfacial flows steered by surface tension. A convergent multigrid algorithm within the LB framework accelerates steady multiphase solutions, with extensions toward transient and phase-change problems such as pool boiling.</p></article>
+      <article class="theme"><h3>Thermal convection</h3><p>Rayleigh–Bénard and mixed convection with anisotropic thermal diffusion in tilted and complex two-dimensional enclosures, including entropy-generation analysis and axisymmetric thermal-LB formulations.</p></article>
+      <article class="theme"><h3>Non-Newtonian and complex fluids</h3><p>Power-law fluid flows over obstacles, in driven cavities and corrugated channels using MRT-LBM, with assessment of collision models for shear-thinning and shear-thickening behaviour.</p></article>
+      <article class="theme"><h3>Fluid–particle and granular systems</h3><p>Coupled discrete-element and lattice Boltzmann (DEM–LBM) methods for particle suspensions, granular impact and avalanches, electro-rheology of suspensions, and experimental studies of air-jet impingement on granular beds.</p></article>
+    </div>
+    <hr class="rule">
+    <h2>Methodology</h2>
+    <p>The lattice Boltzmann method sits at the centre of our work, but we also develop and apply other numerical and particle-based methods — finite-volume schemes, discrete-element methods, phase-field models and smoothed-particle hydrodynamics — and combine them where multiphysics coupling demands it. Simulations run on high-performance-computing infrastructure, including GPU-accelerated solvers.</p>
+    <p><a class="btn btn-dark" href="publications.html">See the publications</a></p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <h4>Flow Physics Lab</h4>
+      <p class="small" style="color:#b9c4cc">Numerical investigation of fluid flow at micro-, meso- and macro-scales, with the lattice Boltzmann method as the primary tool. Department of Mechanical, Materials &amp; Aerospace Engineering, IIT Dharwad.</p>
+    </div>
+    <div>
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About PI</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Reach us</h4>
+      <ul>
+        <li><a href="mailto:dhiraj@iitdh.ac.in">dhiraj@iitdh.ac.in</a></li>
+        <li><a href="https://www.iitdh.ac.in/" target="_blank" rel="noopener">IIT Dharwad</a></li>
+        <li>Dharwad, Karnataka 580011</li>
+      </ul>
+    </div>
+    <div class="fine">
+      © <span id="yr"></span> Flow Physics Lab, Dr. Dhiraj V. Patil. Built for GitHub Pages.
+      <script>document.getElementById("yr").textContent=new Date().getFullYear();</script>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
