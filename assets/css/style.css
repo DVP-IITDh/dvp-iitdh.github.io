@@ -264,3 +264,24 @@ ol.pubs li .tag {
 
 hr.rule { border: none; border-top: 1px solid var(--line); margin: 2rem 0; }
 .small { font-size: .88rem; color: var(--muted); }
+
+/* ---------- Grants table ---------- */
+.grant-table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.grant-table th, .grant-table td { text-align: left; padding: .7rem .8rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.grant-table thead th { background: var(--paper-2); font-size: .82rem; letter-spacing: .01em; color: var(--ink); border-bottom: 2px solid var(--flow-light); }
+.grant-table .ag { font-weight: 600; color: var(--flow-deep); white-space: nowrap; }
+.grant-table .role, .grant-table .per { white-space: nowrap; color: var(--muted); }
+.grant-table tbody tr:hover { background: var(--paper-2); }
+
+/* ---------- Timeline (workshops) ---------- */
+ol.timeline { list-style: none; margin: 0; padding: 0; }
+ol.timeline li { display: grid; grid-template-columns: 5.5rem 1fr; gap: 1rem; padding: 1rem 0; border-top: 1px solid var(--line); }
+ol.timeline .ty { font-family: "Fraunces", serif; color: var(--flow-deep); font-variant-numeric: tabular-nums; }
+ol.timeline .tt { font-weight: 600; }
+ol.timeline .tr { color: var(--flow-deep); font-size: .9rem; margin-top: .1rem; }
+ol.timeline .tm { margin-top: .2rem; }
+@media (max-width: 560px){ ol.timeline li { grid-template-columns: 1fr; gap: .2rem; } }
+
+/* ---------- Callout + placeholder ---------- */
+.callout { border: 1px solid var(--flow-light); background: #eef7f8; border-left: 4px solid var(--flow); border-radius: 8px; padding: .9rem 1.1rem; font-size: .92rem; margin-bottom: 1.8rem; color: var(--ink-soft); }
+.todo { display: inline-block; background: #fbe9dd; color: #a34a1c; border: 1px dashed var(--signal); border-radius: 4px; padding: 0 .35rem; font-size: .85em; font-weight: 600; }
